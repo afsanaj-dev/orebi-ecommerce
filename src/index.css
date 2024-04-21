@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .slick-active div{
+    color: black !important;
+    border-right: 2px solid black !important;
+} */
