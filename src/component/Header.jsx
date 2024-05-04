@@ -32,12 +32,13 @@ const Header = () => {
   useEffect(() => {
     document.addEventListener("click", function (e) {
       if (categoryRef.current.contains(e.target)) {
-        setCategoryModal(true);
+        setCategoryModal(!categoryModal);
+        console.log(e.target);
       } else {
         setCategoryModal(false);
       }
       if (userRef.current.contains(e.target)) {
-        setUserModal(true);
+        setUserModal(!userModal);
       } else {
         setUserModal(false);
       }

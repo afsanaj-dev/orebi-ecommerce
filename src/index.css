@@ -6,3 +6,6 @@
     color: black !important;
     border-right: 2px solid black !important;
 } */
+.slick-dots{
+    padding-bottom: 0px !important;
+}
