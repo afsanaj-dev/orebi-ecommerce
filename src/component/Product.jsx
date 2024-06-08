@@ -7,9 +7,11 @@ import { GrPowerCycle } from "react-icons/gr";
 
 const Product = ({ pimage, pitem, ProductPrice, ProductColor, isNew }) => {
   return (
-    <div className="w-[370px] sm:w-[300px] md:w-[340px] lg:w-[370px]">
+    <div className="w-25% sm:w-[290px] md:w-[300px] lg:w-25%">
       <div className="relative group">
-        <Images src={pimage} alt="product" />
+        <div className="w-full">
+          <Images className="object-cover" src={pimage} alt="product" />
+        </div>
         {isNew && (
           <h4 className="font-bold text-sm text-white py-2 px-6 bg-black inline-block absolute top-5 left-5">
             New
@@ -40,7 +42,7 @@ const Product = ({ pimage, pitem, ProductPrice, ProductColor, isNew }) => {
       </div>
       <Flex className="justify-between mt-6">
         <h3 className="text-black font-bold text-xl">{pitem}</h3>
-        <span className="text-base font-normal text-lightAsh leading-[30px]">
+        <span className="text-base font-normal text-lightAsh leading-[30px] mr-1">
           {ProductPrice}
         </span>
       </Flex>

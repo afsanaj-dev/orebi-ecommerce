@@ -48,7 +48,11 @@ const Header = () => {
         setCartModal(false);
       }
     });
-  }, []);
+    //if the dependency is empty in useEffect it will render only one time,but here we can use it for several times
+    // because we can click the categoryModal it turns true from false or flase from true
+    //  and each time for the dependency categoryModal the useEffect will render and make change to the 
+    // current state of the categoryModal
+  }, [categoryModal]);
 
   return (
     <header className="bg-headerBg py-6">

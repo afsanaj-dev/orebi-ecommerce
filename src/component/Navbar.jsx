@@ -56,12 +56,12 @@ const Navbar = () => {
             // >
               <List className="w-full lg:m-auto lg:w-auto lg:flex gap-10 lg:static absolute top-14 left-0 bg-lightAsh lg:bg-transparent pl-6 py-2 mt-1">
               <ListItem>
-                <Link className="text-white text-sm lg:text-black font-normal hover:font-bold hover:text-black duration-100">
+                <Link to={"/"} className="text-white text-sm lg:text-black font-normal hover:font-bold hover:text-black duration-100">
                   Home
                 </Link>
               </ListItem>
               <ListItem>
-                <Link className="text-white text-sm lg:text-ash  font-normal hover:font-bold hover:text-black duration-100 ">
+                <Link to={"/shop"} className="text-white text-sm lg:text-ash  font-normal hover:font-bold hover:text-black duration-100 ">
                   Shop
                 </Link>
               </ListItem>
