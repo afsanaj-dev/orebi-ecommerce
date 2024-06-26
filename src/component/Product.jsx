@@ -5,7 +5,7 @@ import { FaHeart } from "react-icons/fa";
 import { FaShoppingCart } from "react-icons/fa";
 import { GrPowerCycle } from "react-icons/gr";
 
-const Product = ({ pimage, pitem, ProductPrice, ProductColor, isNew }) => {
+const Product = ({ pimage, pitem, ProductPrice, ProductColor, isNew,className }) => {
   return (
     <div className="w-25% sm:w-[290px] md:w-[300px] lg:w-25%">
       <div className="relative group">
@@ -49,6 +49,7 @@ const Product = ({ pimage, pitem, ProductPrice, ProductColor, isNew }) => {
       <h5 className="text-base font-normal text-lightAsh leading-[30px] mt-3">
         {ProductColor}
       </h5>
+
     </div>
   );
 };

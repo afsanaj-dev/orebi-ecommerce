@@ -44,6 +44,7 @@ const NewArrivals = () => {
     const { className, style, onClick } = props;
     return (
       <div
+      // !w-[34px] here we use ! sign for important
         className={`${className} !w-[34px] lg:!w-[50px] !h-[34px] lg:!h-[50px] `}
         style={{
           ...style,

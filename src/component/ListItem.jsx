@@ -1,11 +1,11 @@
 import React from 'react'
 
-const ListItem = ({children,className}) => {
+const ListItem = ({children,className,onClick}) => {
   return (
-    <li className={className}>
+    <li onClick={onClick} className={className}>
         {children}
     </li>
   )
 }
 
-export default ListItem
+export default ListItem 
